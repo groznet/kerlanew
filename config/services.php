@@ -35,4 +35,14 @@ return [
         ],
     ],
 
+    'sms' => [
+        'driver' => env('SMS_DRIVER', 'log'),
+    ],
+
+    'smartcaptcha' => [
+        'driver' => env('SMARTCAPTCHA_DRIVER', 'stub'),
+        'site_key' => env('SMARTCAPTCHA_SITE_KEY'),
+        'secret_key' => env('SMARTCAPTCHA_SECRET_KEY'),
+    ],
+
 ];
